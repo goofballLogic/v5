@@ -121,13 +121,14 @@ Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber
 
     "I think yes." (@christian-bromann,  https://github.com/webdriverio/v5/issues/82#issue-339135139)
 
-- [ ] 9. Is there any special reporting needed for tags functionality? (source: tagged_hooks.feature)
+- [x] 9. Is there any special reporting needed for tags functionality? (source: tagged_hooks.feature)
 
-    _Answer pending_
+    "Tags aren't really working with the current integration which I would love to change. Such reporting would
+need to be added." (@christian-bromann,  https://github.com/webdriverio/v5/issues/82#issue-339135139)
 
-- [ ] 10. Do we need to cope with errors invoking cucumber (e.g. invalid world parameters) ? (source: world_parameters.feature)
+- [x] 10. Do we need to cope with errors invoking cucumber (e.g. invalid world parameters) ? (source: world_parameters.feature)
 
-    _Answer pending_
+    "Yes." (@christian-bromann,  https://github.com/webdriverio/v5/issues/82#issue-339135139)
 
 ## Reporting requirements derived from the protractor-cucumber-framework project
 
