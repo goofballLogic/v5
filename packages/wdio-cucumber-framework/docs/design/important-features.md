@@ -26,7 +26,9 @@ This section represents the basics for features and steps which need to be repor
 ## Reporting requirements derived from the cucumber-js test suite
 
 Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber-js/blob/master/features)
+
 :( - Anything which prevents tests from being run (e.g. ambiguous steps, timeouts, errors thrown during hooks)
+
 :) - Things which happen as the result of running tests (even test failure, pending, undefined)
 
 | source                                         | test considerations                                                       |
@@ -159,6 +161,7 @@ need to be added." (@christian-bromann,  https://github.com/webdriverio/v5/issue
 Spec files found in: [protractor-cucumber-framework tests](https://github.com/protractor-cucumber-framework/protractor-cucumber-framework/tree/master/test)
 
 :( - Anything which prevents tests from being run (e.g. ambiguous steps, timeouts, errors thrown during hooks)
+
 :) - Things which happen as the result of running tests (even test failure, pending, undefined)
 
 | source                      | test considerations                                            |
