@@ -18,9 +18,9 @@ This section represents the basics for features and steps which need to be repor
 
 ### Basic questions
 
-- [ ] 1. Are features reported through wdio somehow?
+- [x] 1. Are features reported through wdio somehow?
 
-    _Answer pending_
+    Reporting the title of the feature is required, but description etc. are considered very low priority (see https://github.com/webdriverio/v5/issues/82#issuecomment-403842034)
 
 ## Reporting requirements derived from the cucumber-js test suite
 
