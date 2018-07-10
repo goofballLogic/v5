@@ -26,6 +26,8 @@ This section represents the basics for features and steps which need to be repor
 ## Reporting requirements derived from the cucumber-js test suite
 
 Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber-js/blob/master/features)
+:( - Anything which prevents tests from being run (e.g. ambiguous steps, timeouts, errors thrown during hooks)
+:) - Things which happen as the result of running tests (even test failure, pending, undefined)
 
 | source                                         | test considerations                                                       |
 | ---------------------------------------------- | ------------------------------------------------------------------------- |
@@ -40,7 +42,7 @@ Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber
 | custom_formatter.feature                       |                                                                           |
 | custom_stack_trace.feature                     |                                                                           |
 | data_tables.feature                            |                                                                           |
-| direct_imports.feature                         | :(     Failures identify step definition line numbers                     |
+| direct_imports.feature                         | :)     Failures identify step definition line numbers                     |
 | exit.feature                                   |                                                                           |
 | fail_fast.feature                              |                                                                           |
 | failing_steps.feature                          | :(     Tests are incorrectly implemented                                  |
@@ -51,7 +53,7 @@ Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber
 | global_install.feature                         |                                                                           |
 | handling_step_errors.feature                   | :(     Tests are incorrectly implemented                                  |
 | hook_interface.feature                         | :(     Before or After hooks are incorrectly implemented                  |
-| hook_interface.feature                         | :)     Before or After hooks deliberately throw an Error                  |
+| hook_interface.feature                         | :(     Before or After hooks deliberately throw an Error                  |
 | hook_parameter.feature                         |                                                                           |
 | hook_timeouts.feature                          | :(     Hook timeouts                                                      |
 | hooks.feature                                  |                                                                           |
@@ -93,11 +95,11 @@ Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber
 - [x] 1. Do cucumber background steps run before or after wdio hooks? (note that they run _before_ cucumber hooks) (source: background.feature)
 
     Following discussion (https://github.com/webdriverio/v5/issues/82#issuecomment-403840256, https://github.com/webdriverio/v5/issues/82#issuecomment-403852060) I'm deciding to add wdio hook definitions as follows, which will allow wdio to determine the order in which they are handled:
-    
+
     Priority 1 (must)
     - beforeExample
     - afterExample
-        
+
     Priority 2 (should)
     - beforeCucumberBeforeAll
     - beforeCucumberBefore
@@ -107,10 +109,10 @@ Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber
     - afterCucumberAfter
     - afterCucumberBefore
     - afterCucumberBeforeAll
-        
+
     Priorty 3 (could)
     - beforeSnippet
-    - afterSnippet        
+    - afterSnippet
 
 
 - [x] 2. Is it correct to assume that there is no --exit functionality or that wdio replaces it? (source: exit.feature)
@@ -150,12 +152,30 @@ need to be added." (@christian-bromann,  https://github.com/webdriverio/v5/issue
 
     "Yes." (@christian-bromann,  https://github.com/webdriverio/v5/issues/82#issue-339135139)
 
-    
+
 ## Reporting requirements derived from the protractor-cucumber-framework project
 
 
-Features taken from: [protractor-cucumber-framework tests](https://github.com/protractor-cucumber-framework/protractor-cucumber-framework/tree/master/test)
+Spec files found in: [protractor-cucumber-framework tests](https://github.com/protractor-cucumber-framework/protractor-cucumber-framework/tree/master/test)
 
-| source                                         | test considerations                                                       |
-| ---------------------------------------------- | ------------------------------------------------------------------------- |
-| ambiguous-steps.spec.js                        |                                                                           |
+:( - Anything which prevents tests from being run (e.g. ambiguous steps, timeouts, errors thrown during hooks)
+:) - Things which happen as the result of running tests (even test failure, pending, undefined)
+
+| source                      | test considerations                                            |
+| --------------------------- | -------------------------------------------------------------- |
+| ambiguous-steps.spec.js     | :( Tests are incorrectly implemented                           |
+| cucumber1.spec.js           | (from feature file) Pass, Fail, Multiple fails, Missing steps  |
+| cucumber1.spec.js           | :) Works even with fail-fast happening                         |
+| cucumber1.spec.js           | :) Handle string and no-strict modes correctly                 |
+| cucumber1.spec.js           | :) Specify scenarios using (single/multiple) names             |
+| cucumber1.spec.js           | :) Ability to run with tags associated to native configuration |
+| cucumber2.spec.js           | :) Multiple tags (including: negated tags, no tags)            |
+| cucumber3.spec.js           | (from feature file) Examples / Combinations                    |
+| cucumber4.spec.js           | -                                                              |
+| output-files.spec.js        | :) handle custom formatters (?)                                |
+| progress.spec.js            | :) reporting progress as spec is run (?)                       |
+| rerun.spec.js               | :) rerun functionality (?)                                     |
+| restart-browser-spec.js     | -                                                              |
+| source-location.spec.js     | :) source locations reported back to protractor                |
+| tags.spec.js                | :) ability to "or" tags                                        |
+| uncaught-exceptions.spec.js | :) uncaught exceptions result in failed steps                  |
