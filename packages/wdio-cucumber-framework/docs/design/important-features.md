@@ -93,9 +93,9 @@ Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber
 
     _Answer pending_
 
-- [ ] 2. Is it correct to assume that there is no --exit functionality or that wdio replaces it? (source: exit.feature)
+- [x] 2. Is it correct to assume that there is no --exit functionality or that wdio replaces it? (source: exit.feature)
 
-    _Answer pending_
+    This will not be supported (@christian-bromann, https://github.com/webdriverio/v5/issues/82#issuecomment-403831128)
 
 - [ ] 3. Is it correct to assume that there is no --fail-fast functionality or that wdio replaces it? (source: fail_fast.feature)
 
