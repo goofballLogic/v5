@@ -97,9 +97,9 @@ Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber
 
     This will not be supported (@christian-bromann, https://github.com/webdriverio/v5/issues/82#issuecomment-403831128)
 
-- [ ] 3. Is it correct to assume that there is no --fail-fast functionality or that wdio replaces it? (source: fail_fast.feature)
+- [x] 3. Is it correct to assume that there is no --fail-fast functionality or that wdio replaces it? (source: fail_fast.feature)
 
-    _Answer pending_
+    This will not be supported (see https://github.com/webdriverio/v5/issues/82#issuecomment-403831305)
 
 - [x] 4. Does wdio support multiple languages like cucumber? (source: language.feature)
 
