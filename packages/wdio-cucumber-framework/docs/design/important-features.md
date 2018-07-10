@@ -101,17 +101,17 @@ Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber
 
     _Answer pending_
 
-- [ ] 4. Does wdio support multiple languages like cucumber? (source: language.feature)
+- [x] 4. Does wdio support multiple languages like cucumber? (source: language.feature)
 
-    _Answer pending_
+    "I think it does by applying certain cucumberOpts in the wdio config." (@christian-bromann,  https://github.com/webdriverio/v5/issues/82#issue-339135139)
 
-- [ ] 5. Do wdio rerun semantics replace/invalidate the cucumber ones? (source: rerun_formatter.feature)
+- [x] 5. Do wdio rerun semantics replace/invalidate the cucumber ones? (source: rerun_formatter.feature)
 
-    _Answer pending_
+    "This is also up to the Cucumber framework. WDIO doesn't do anything specific like this." (@christian-bromann,  https://github.com/webdriverio/v5/issues/82#issue-339135139)
 
-- [ ] 6. How does the wdio rerun functionality work with the cucumber rerun functionality (reporting)? (source: step_wrapper_with_options.feature)
+- [x] 6. How does the wdio rerun functionality work with the cucumber rerun functionality (reporting)? (source: step_wrapper_with_options.feature)
 
-    _Answer pending_
+    We will not do anything specific to work with the cucumber "rerun" functionality (see https://github.com/webdriverio/v5/issues/82#issue-339135139)
 
 - [ ] 7. Is strict mode useable with wdio? (source: strict_mode.feature)
 
