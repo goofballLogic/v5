@@ -94,26 +94,23 @@ Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber
 
     Following discussion (https://github.com/webdriverio/v5/issues/82#issuecomment-403840256, https://github.com/webdriverio/v5/issues/82#issuecomment-403852060) I'm deciding to add wdio hook definitions as follows, which will allow wdio to determine the order in which they are handled:
     
-    Priority 1
+    Priority 1 (must)
+    - beforeExample
+    - afterExample
         
-        - beforeExample
-        - afterExample
+    Priority 2 (should)
+    - beforeCucumberBeforeAll
+    - beforeCucumberBefore
+    - beforeCucumberAfter
+    - beforeCucumberAfterAll
+    - afterCucumberAfterAll
+    - afterCucumberAfter
+    - afterCucumberBefore
+    - afterCucumberBeforeAll
         
-    Priority 2
- 
-        - beforeCucumberBeforeAll
-        - beforeCucumberBefore
-        - beforeCucumberAfter
-        - beforeCucumberAfterAll
-        - afterCucumberAfterAll
-        - afterCucumberAfter
-        - afterCucumberBefore
-        - afterCucumberBeforeAll
-        
-    Priorty C
-   
-        - beforeSnippet
-        - afterSnippet        
+    Priorty 3 (could)
+    - beforeSnippet
+    - afterSnippet        
 
 
 - [x] 2. Is it correct to assume that there is no --exit functionality or that wdio replaces it? (source: exit.feature)
