@@ -130,6 +130,10 @@ need to be added." (@christian-bromann,  https://github.com/webdriverio/v5/issue
 
     "Yes." (@christian-bromann,  https://github.com/webdriverio/v5/issues/82#issue-339135139)
 
+- [ ] 11. How do we report Snippets?
+
+    _Answer pending_
+    
 ## Reporting requirements derived from the protractor-cucumber-framework project
 
 _To be determined_
