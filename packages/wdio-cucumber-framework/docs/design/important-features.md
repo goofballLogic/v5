@@ -99,7 +99,7 @@ Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber
 
 - [x] 3. Is it correct to assume that there is no --fail-fast functionality or that wdio replaces it? (source: fail_fast.feature)
 
-    This will not be supported (see https://github.com/webdriverio/v5/issues/82#issuecomment-403831305)
+    This will not be supported (per @BorisOsipov, https://github.com/webdriverio/v5/issues/82#issuecomment-403831305)
 
 - [x] 4. Does wdio support multiple languages like cucumber? (source: language.feature)
 
@@ -113,9 +113,9 @@ Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber
 
     We will not do anything specific to work with the cucumber "rerun" functionality (see https://github.com/webdriverio/v5/issues/82#issue-339135139)
 
-- [ ] 7. Is strict mode useable with wdio? (source: strict_mode.feature)
+- [x] 7. Is strict mode useable with wdio? (source: strict_mode.feature)
 
-    _Answer pending_
+    Nice-to-have (per @BorisOsipov, https://github.com/webdriverio/v5/issues/82#issuecomment-403835129)
 
 - [x] 8. Is the high-level summary from cucumber relevant when using wdio? (source: summary_formatter.feature)
 
