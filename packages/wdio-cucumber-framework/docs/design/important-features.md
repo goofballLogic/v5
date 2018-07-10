@@ -117,9 +117,9 @@ Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber
 
     _Answer pending_
 
-- [ ] 8. Is the high-level summary from cucumber relevant when using wdio? (source: summary_formatter.feature)
+- [x] 8. Is the high-level summary from cucumber relevant when using wdio? (source: summary_formatter.feature)
 
-    _Answer pending_
+    "I think yes." (@christian-bromann,  https://github.com/webdriverio/v5/issues/82#issue-339135139)
 
 - [ ] 9. Is there any special reporting needed for tags functionality? (source: tagged_hooks.feature)
 
