@@ -15,6 +15,7 @@ This section represents the basics for features and steps which need to be repor
 | Background steps                          | reported as part of each scenario                                                  |
 | Scenario (or Scenario Outline or Example) |                                                                                    |
 | Examples (or Combinations)                | For pass/fail somehow need to represent both Example and the Scenario line numbers |
+| Hooks                                     |                                                                                    |
 
 ### Basic questions
 
