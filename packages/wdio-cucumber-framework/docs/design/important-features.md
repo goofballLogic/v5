@@ -8,7 +8,7 @@ This section represents the basics for features and steps which need to be repor
 
 | Basic thing                               | test considerations (other than basic pass/fail reporting)                         |
 | ----------------------------------------- | ---------------------------------------------------------------------------------- |
-| Feature                                   | ???                                      |
+| Feature                                   | Title of feature must be reported, description is a nice-to-have                   |
 | Given (or And or But)                     |                                                                                    |
 | When (or And or But) steps                |                                                                                    |
 | Then (or And or But) steps                |                                                                                    |
