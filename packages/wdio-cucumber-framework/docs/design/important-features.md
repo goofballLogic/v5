@@ -89,9 +89,19 @@ Features taken from: [cucumber-js features](https://github.com/cucumber/cucumber
 
 ### Questions based on cucumber-js
 
-- [ ] 1. Do cucumber background steps run before or after wdio hooks? (note that they run _before_ cucumber hooks) (source: background.feature)
+- [x] 1. Do cucumber background steps run before or after wdio hooks? (note that they run _before_ cucumber hooks) (source: background.feature)
 
-    _Answer pending_
+    Following discussion (https://github.com/webdriverio/v5/issues/82#issuecomment-403840256, https://github.com/webdriverio/v5/issues/82#issuecomment-403852060) I'm deciding to add hook definitions for all of the following:
+        
+    - beforeCucumberBeforeAll
+    - beforeCucumberBefore
+    - beforeCucumberAfter
+    - beforeCucumberAfterAll
+    - afterCucumberAfterAll
+    - afterCucumberAfter
+    - afterCucumberBefore
+    - afterCucumberBeforeAll
+    
 
 - [x] 2. Is it correct to assume that there is no --exit functionality or that wdio replaces it? (source: exit.feature)
 
