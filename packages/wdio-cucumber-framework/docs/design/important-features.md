@@ -153,4 +153,9 @@ need to be added." (@christian-bromann,  https://github.com/webdriverio/v5/issue
     
 ## Reporting requirements derived from the protractor-cucumber-framework project
 
-_To be determined_
+
+Features taken from: [protractor-cucumber-framework tests](https://github.com/protractor-cucumber-framework/protractor-cucumber-framework/tree/master/test)
+
+| source                                         | test considerations                                                       |
+| ---------------------------------------------- | ------------------------------------------------------------------------- |
+| ambiguous-steps.spec.js                        |                                                                           |
