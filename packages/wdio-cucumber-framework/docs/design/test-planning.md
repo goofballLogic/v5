@@ -13,4 +13,8 @@ The following are features of reporting which must be addressed for the reportin
 - The title of the feature must be reported
 
 #### Given, When, Then, And
-
+- These steps must raise the following events:
+    - test:start
+    - test:pass / test:fail / test:pending
+    - test:end
+- 
